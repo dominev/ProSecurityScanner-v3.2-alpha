@@ -1,0 +1,54 @@
+scanner:
+  name: ProSecurityScanner
+  version: 3.0
+  timeout: 10
+  max_threads: 10
+  user_agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) ProSecurityScanner/3.0'
+
+  # Fast мод
+  fast_mode:
+    enabled: true
+    skip_modules:
+      - sensitive_files
+      - ssl_audit
+      - owasp_top10
+
+checks:
+  security_headers: true
+  ssl_audit: true
+  info_disclosure: true
+  sensitive_files: true
+  entry_points: true
+  http_methods: true
+  owasp_top10: true
+  cms_detection: true
+
+sensitive_files:
+  - /.git/config
+  - /.env
+  - /backup.zip
+  - /backup.sql
+  - /admin
+  - /wp-admin
+  - /.aws/credentials
+  - /config.php
+  - /phpinfo.php
+  - /.docker/config.json
+  - /kubeconfig
+  - /.ssh/authorized_keys
+  - /id_rsa
+  - /web.config
+  - /.htaccess
+
+# Порог риска
+risk_thresholds:
+  critical: 75
+  high: 50
+  medium: 25
+  low: 10
+
+# Rate limiting
+rate_limiting:
+  enabled: true
+  delay_between_requests: 0.5
+  max_requests_per_minute: 60
