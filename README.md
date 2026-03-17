@@ -3,6 +3,8 @@
 > Professional Reconnaissance & Triage Scanner  
 > ⚠️ For educational and authorized security testing only
 
+![Демонстрация](assets/screenshots/json-test.png)
+
 ## ✨ Возможности
 
 - -- Быстрое сканирование заголовков безопасности (OWASP)
