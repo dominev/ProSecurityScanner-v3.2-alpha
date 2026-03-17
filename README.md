@@ -3,7 +3,7 @@
 > Professional Reconnaissance & Triage Scanner  
 > ⚠️ For educational and authorized security testing only
 
-![Демонстрация](assets/screenshots/json-test.png)
+![Демонстрация](assets/screenshots/json-test.jpg)
 
 ## ✨ Возможности
 
