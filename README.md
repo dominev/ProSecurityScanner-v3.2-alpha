@@ -1,4 +1,4 @@
-# 🛡️ ProSecurityScanner v3.2-alpha @dominev
+#! 🛡️ ProSecurityScanner v3.2-alpha @dominev
 
 > Professional Reconnaissance & Triage Scanner  
 > ⚠️ For educational and authorized security testing only
